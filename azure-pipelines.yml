@@ -21,8 +21,6 @@ steps:
     location: 'Japan East'
     templateLocation: 'Linked artifact'
     csmFile: 'azuredeploy.json'
-    overrideParameters: |
-      -projectName jts
-      -linkedTemplateUri https://raw.githubusercontent.com/jon-xi/jon-infra-pipeline-test/master/linkedStorageAccount.json.
+    overrideParameters: -storagePrefix jts
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
